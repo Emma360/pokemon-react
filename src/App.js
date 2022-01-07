@@ -39,7 +39,11 @@ export const App = () => {
                   <div className="card-body text-center bg-dark text-white">
                     <div key={pokemon.url}>
                       <h3 className="card-title">{pokemon.name}</h3>
+
                       <img src={pokemon.info.sprites.front_default} alt="" />
+                      <h4> HP: {pokemon.info.stats[0].base_stat} </h4>
+                      <h4> Attack: {pokemon.info.stats[1].base_stat} </h4>
+                      <h4> Defence: {pokemon.info.stats[2].base_stat} </h4>
                     </div>
                   </div>
                 </button>
