@@ -32,13 +32,13 @@ export const App = () => {
     <div>
       {pokemonDetails.map((pokemon) => {
         return (
-          <div class="row">
-            <div class="col-6 col-sm-4">
-              <div class="card p-0 overflow-hidden h-100 shadow">
-                <button type="button" class="btn btn-outline-light">
-                  <div class="card-body text-center bg-dark text-white">
+          <div className="row">
+            <div className="col-6 col-sm-4">
+              <div className="card p-0 overflow-hidden h-100 shadow">
+                <button type="button" className="btn btn-outline-light">
+                  <div className="card-body text-center bg-dark text-white">
                     <div key={pokemon.url}>
-                      <h3 class="card-title">{pokemon.name}</h3>
+                      <h3 className="card-title">{pokemon.name}</h3>
                       <img src={pokemon.info.sprites.front_default} alt="" />
                     </div>
                   </div>
